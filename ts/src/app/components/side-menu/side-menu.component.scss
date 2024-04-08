@@ -1,0 +1,43 @@
+.side-menu {
+  position: fixed;
+  width: 220px;
+  box-shadow: 0px 0px 10px 0px #00000040;
+
+  .event-title {
+    padding-block: 20px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .nav-list-item {
+    padding: 8px 24px;
+    border-bottom: 2px solid #e7e7e7;
+
+    a {
+      font-family: "Quicksand", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #725c5c;
+    }
+  }
+
+  .link-active {
+    background-color: #fdf1eb;
+    position: relative;
+    a {
+      margin-left: 5px;
+    }
+  }
+  .link-active a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #ffb455 0%, #ed7839 100%);
+  }
+}

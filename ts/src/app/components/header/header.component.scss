@@ -1,0 +1,65 @@
+.header {
+  margin-left: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 36px;
+  background-color: #fdf1eb;
+  color: #725c5c;
+
+  .header_text1,
+  .header_text3 {
+    font-size: 14px;
+  }
+
+  .header_text2 {
+    font-size: 20px;
+  }
+
+  .language-profile-box {
+    display: flex;
+    gap: 22px;
+
+    .language-btn {
+      border: 1px solid #cccccc;
+      padding: 8px 14px;
+      border-radius: 4px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      color: #333333;
+      font-size: 14px;
+    }
+
+    .profile-info {
+      display: flex;
+      text-align: end;
+      gap: 6px;
+
+      .welcome-msg {
+        font-size: 14px;
+      }
+
+      .email {
+        font-size: 12px;
+      }
+
+      .profile-pic {
+        width: 30px;
+        height: 30px;
+      }
+      .profile-pic-box {
+        position: relative;
+      }
+      .notification-badge {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+      }
+    }
+  }
+}
