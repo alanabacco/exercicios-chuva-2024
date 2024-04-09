@@ -7,12 +7,12 @@
   background-color: #fdf1eb;
   color: #725c5c;
 
-  .header_text1,
-  .header_text3 {
+  &-text1,
+  &-text3 {
     font-size: 14px;
   }
 
-  .header_text2 {
+  &-text2 {
     font-size: 20px;
   }
 
@@ -20,7 +20,7 @@
     display: flex;
     gap: 22px;
 
-    .language-btn {
+    .language-button {
       border: 1px solid #cccccc;
       padding: 8px 14px;
       border-radius: 4px;
@@ -32,26 +32,27 @@
       color: #333333;
       font-size: 14px;
     }
+  }
 
-    .profile-info {
-      display: flex;
-      text-align: end;
-      gap: 6px;
+  .profile-info {
+    display: flex;
+    text-align: end;
+    gap: 6px;
 
-      .welcome-msg {
-        font-size: 14px;
-      }
+    .welcome-message {
+      font-size: 14px;
+    }
 
-      .email {
-        font-size: 12px;
-      }
+    .email {
+      font-size: 12px;
+    }
 
-      .profile-pic {
+    .profile-picture-box {
+      position: relative;
+
+      .profile-picture {
         width: 30px;
         height: 30px;
-      }
-      .profile-pic-box {
-        position: relative;
       }
       .notification-badge {
         width: 12px;
