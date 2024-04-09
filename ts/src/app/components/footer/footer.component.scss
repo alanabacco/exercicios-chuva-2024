@@ -1,0 +1,44 @@
+.footer {
+  margin-left: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 36px 36px;
+  font-family: "Quicksand", sans-serif;
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      width: 200px;
+    }
+
+    a {
+      background-color: #71478e;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 4px;
+      text-align: center;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      color: #595959;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+    }
+
+    .content-bold {
+      font-weight: 600;
+    }
+  }
+}
