@@ -1,0 +1,30 @@
+.resume {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+}
+.resume-header {
+  background-color: #fdf1eb;
+  padding: 8px 16px;
+  border-bottom: 1px solid #ececec;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4e4e4e;
+  border-bottom: 1px solid #ececec;
+}
+.resume-content {
+  padding: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #5c5c5c;
+  line-height: 22px;
+}
+.resume-content-more {
+  display: none;
+}
+.btn-show-more {
+  color: #ed7839;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+}

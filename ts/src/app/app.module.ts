@@ -6,6 +6,7 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PresentationSectionComponent } from './components/presentation-section/presentation-section.component';
+import { ResumeSectionComponent } from './components/resume-section/resume-section.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PresentationSectionComponent } from './components/presentation-section/
     SideMenuComponent,
     HeaderComponent,
     FooterComponent,
-    PresentationSectionComponent
+    PresentationSectionComponent,
+    ResumeSectionComponent
   ],
   imports: [
     BrowserModule
