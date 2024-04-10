@@ -11,17 +11,19 @@ export class DiscussionSectionComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  showForm = false;
-  topicSent = false;
-  showCreateTopic = true;
-  toggleForm(): void {
-    this.showForm = !this.showForm;
-    this.showCreateTopic = !this.showCreateTopic;
+  isFormShowing = false;
+  isSubmitSucessShowing = false;
+  isCreateTopicCallShowing = true;
+
+  showForm(): void {
+    this.isFormShowing = true;
+    this.isCreateTopicCallShowing = false;
+    this.isSubmitSucessShowing = false;
   }
 
-  sendTopic(form: NgForm): void {
-    this.topicSent = true;
-    this.showForm = !this.showForm;
-    // form.resetForm();
+  submitForm(form: NgForm): void {
+    this.isSubmitSucessShowing = true;
+    this.isCreateTopicCallShowing = false;
+    this.isFormShowing = false;
   }
 }

@@ -25,6 +25,7 @@
       gap: 30px;
       justify-content: center;
       align-items: center;
+      position: relative;
 
       &-title {
         font-family: "Roboto", sans-serif;
@@ -46,11 +47,20 @@
       }
 
       &-button {
+        background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+        border: none;
+        font-family: "quicksand", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+
         padding: 8px 16px;
         border-radius: 4px;
         display: flex;
         align-items: center;
         gap: 6px;
+
+        position: absolute;
+        top: 169px;
 
         svg {
           width: 16px;
@@ -107,6 +117,12 @@
         border-top: 0;
       }
       .submit-btn {
+        background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+        border: none;
+        font-family: "quicksand", sans-serif;
+        font-weight: 700;
+
+        color: #ffffff;
         padding: 8px 70px;
         border-radius: 0 0 4px 0;
       }
@@ -120,6 +136,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      position: relative;
 
       .sucess-msg {
         font-family: "roboto", sans-serif;
@@ -140,11 +157,81 @@
   }
 }
 
-button {
+.discussion-content-createnewtopic-button {
   background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
   border: none;
-
   font-family: "quicksand", sans-serif;
   font-weight: 700;
   color: #ffffff;
+
+  padding: 8px 16px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  position: absolute;
+  top: 104px;
+}
+
+.break-line {
+  border-top: 1px solid #ececec;
+  margin-block: 20px;
+}
+
+.topic-card {
+  padding: 24px 16px;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 0px 8px 0px #0000001f;
+}
+.topic-title {
+  color: #ed7839;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+}
+.topic-author {
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5c5c5c;
+}
+.topic-summary {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  margin-block: 10px;
+}
+.topic-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  p {
+    font-family: Segoe UI, sans-serif;
+    font-size: 14px;
+    font-weight: 350;
+    color: #757575;
+  }
+}
+
+.more-info-btn {
+  background-color: transparent;
+  border: none;
+  padding-top: 2px;
+
+  svg {
+    height: 18px;
+  }
+}
+.heart-btn {
+  background-color: #ed7839;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px 0;
+  box-shadow: 0px 2px 2px 0px #0000003d;
+
+  svg {
+    height: 14px;
+    width: 14px;
+  }
 }
