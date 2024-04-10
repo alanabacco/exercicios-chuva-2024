@@ -1,0 +1,50 @@
+
+.details {
+  max-width: 250px;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  &-header {
+    background-color: #fdf1eb;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ececec;
+    font-weight: 500;
+    font-size: 20px;
+    color: #4e4e4e;
+  }
+
+  &-content {
+    padding: 16px;
+    font-family: "Quicksand", sans-serif;
+    color: #5c5c5c;
+    letter-spacing: 0.02em;
+
+    &-description {
+      font-size: 12px;
+      letter-spacing: 0.02em;
+
+      &-bold {
+        font-weight: 700;
+      }
+    }
+
+    &-authors {
+      font-size: 14px;
+      letter-spacing: 0.02em;
+
+      &-bold {
+        font-weight: 700;
+      }
+    }
+
+    &-note {
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      color: #ada0a0;
+    }
+  }
+}

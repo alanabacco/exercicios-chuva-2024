@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PresentationSectionComponent } from './components/presentation-section/presentation-section.component';
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component';
 import { ActionsSectionComponent } from './components/actions-section/actions-section.component';
+import { DetailsSectionComponent } from './components/details-section/details-section.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ActionsSectionComponent } from './components/actions-section/actions-se
     FooterComponent,
     PresentationSectionComponent,
     ResumeSectionComponent,
-    ActionsSectionComponent
+    ActionsSectionComponent,
+    DetailsSectionComponent
   ],
   imports: [
     BrowserModule
