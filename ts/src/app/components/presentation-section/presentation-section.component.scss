@@ -1,0 +1,59 @@
+.article-title {
+  display: inline;
+  font-weight: 900;
+  font-size: 20px;
+  color: #ed7839;
+  letter-spacing: 0.05em;
+  height: fit-content;
+}
+
+.video {
+  margin: auto;
+  position: relative;
+  width: 800px;
+  height: 440px;
+}
+
+.video-player {
+  margin-block: 30px;
+  position: relative;
+}
+.color-overlay {
+  position: absolute;
+  top: 30px;
+  height: 439px;
+  width: 784px;
+  background: #8d350680;
+}
+
+.video-title {
+  font-weight: 900;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  position: absolute;
+  padding: 32px;
+  top: 28px;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  position: absolute;
+  padding: 32px;
+  bottom: 0;
+}
+.video-picture {
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #ed7839;
+}
+.video-info-name {
+  font-size: 34px;
+}
+.video-info-university {
+  font-size: 20px;
+}
