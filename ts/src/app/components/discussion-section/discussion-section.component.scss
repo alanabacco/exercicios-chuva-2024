@@ -94,38 +94,37 @@
           border: 1px solid #cccccc;
           font-family: "Quicksand", sans-serif;
           font-weight: 500;
+          &::placeholder {
+            font-size: 14px;
+            font-family: "Quicksand", sans-serif;
+            color: #4d4d4d;
+          }
         }
 
-        .discussion-form-input::placeholder {
-          font-size: 14px;
-          font-family: "Quicksand", sans-serif;
-          color: #4d4d4d;
-        }
         .textarea {
-          // border-bottom: 0;
           border-radius: 4px 4px 0 0;
           min-height: 115px;
         }
       }
+    }
 
-      .submit-btn-box {
-        display: flex;
-        background-color: #eaf1f2;
-        justify-content: end;
-        border-radius: 0 0 4px 4px;
-        border: 1px solid #cccccc;
-        border-top: 0;
-      }
-      .submit-btn {
-        background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
-        border: none;
-        font-family: "quicksand", sans-serif;
-        font-weight: 700;
+    .submit-btn-box {
+      display: flex;
+      background-color: #eaf1f2;
+      justify-content: end;
+      border-radius: 0 0 4px 4px;
+      border: 1px solid #cccccc;
+      border-top: 0;
+    }
+    .submit-btn {
+      background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+      border: none;
+      font-family: "quicksand", sans-serif;
+      font-weight: 700;
 
-        color: #ffffff;
-        padding: 8px 70px;
-        border-radius: 0 0 4px 0;
-      }
+      color: #ffffff;
+      padding: 8px 70px;
+      border-radius: 0 0 4px 0;
     }
 
     .discussion-topic-sent-container {
@@ -145,7 +144,6 @@
         color: #ed7839;
       }
       .sucess-description-msg {
-        font-family: "Quicksand", sans-serif;
         font-size: 14px;
       }
 
@@ -153,28 +151,28 @@
         color: #f48f44;
         text-decoration: underline;
       }
+
+      .create-new-topic-btn {
+        background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+        border: none;
+        font-family: "quicksand", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+
+        padding: 8px 16px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        position: absolute;
+        top: 104px;
+      }
+    }
+
+    .break-line {
+      border-top: 1px solid #ececec;
+      margin-block: 20px;
     }
   }
-}
-
-.create-new-topic-btn {
-  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
-  border: none;
-  font-family: "quicksand", sans-serif;
-  font-weight: 700;
-  color: #ffffff;
-
-  padding: 8px 16px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  position: absolute;
-  top: 104px;
-}
-
-.break-line {
-  border-top: 1px solid #ececec;
-  margin-block: 20px;
 }
