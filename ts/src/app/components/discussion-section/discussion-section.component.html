@@ -1,0 +1,98 @@
+<section class="discussion">
+  <div class="discussion-header">
+    <h3>Discussões</h3>
+  </div>
+
+  <div class="discussion-content">
+    <div *ngIf="showCreateTopic" class="discussion-content-createtopic">
+      <h4 class="discussion-content-createtopic-title">
+        Compartilhe suas ideias ou dúvidas com os autores!
+      </h4>
+
+      <div class="discussion-content-createtopic-icons">
+        <img
+          src="../../../assets/icone1.png"
+          alt="ícone de uma mão com um galho e flores em cima"
+        />
+        <img
+          src="../../../assets/icone2.png"
+          alt="ícone com as letras Q e A escritos em branco em caixinhas laranja"
+        />
+        <img
+          src="../../../assets/icone3.png"
+          alt="ícone de duas pessoas com uma lâmpada laranja no meio delas"
+        />
+      </div>
+
+      <p class="discussion-content-createtopic-description">
+        Sabia que o maior estímulo no desenvolvimento científico e cultural é a
+        curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+      </p>
+
+      <button
+        (click)="toggleForm()"
+        class="discussion-content-createtopic-button"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            fill="rgb(255, 255, 255)"
+            d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+          />
+        </svg>
+        criar tópico
+      </button>
+    </div>
+
+    <div *ngIf="showForm" class="discussion-content-form">
+      <p>
+        Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
+      </p>
+      <form #topicForm="ngForm" (ngSubmit)="sendTopic(topicForm)">
+        <div class="discussion-content-form-box">
+          <label for="subject" class="discussion-content-form-label">
+            Assunto:
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            class="discussion-content-form-input"
+            placeholder="Defina um tópico sucinto para notificar os autores..."
+            ngModel
+            required
+          />
+
+          <label for="content" class="discussion-content-form-label">
+            Conteúdo:
+          </label>
+          <textarea
+            id="content"
+            name="content"
+            class="discussion-content-form-input textarea"
+            ngModel
+            required
+          ></textarea>
+        </div>
+        <div class="submit-btn-box">
+          <button type="submit" class="submit-btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+    <div *ngIf="topicSent" class="discussion-content-topic-sent">
+      <p class="sucess-msg">Seu tópico foi enviado com sucesso! :D</p>
+      <p class="sucess-description-msg">
+        Agradecemos por sua contribuição, uma notificação será enviada ao seu
+        email assim que seu tópico for respondido!
+      </p>
+      <a href="#">Descubra outros trabalhos!</a>
+      <button
+        (click)="toggleForm()"
+        class="discussion-content-createtopic-button"
+      >
+        criar novo tópico
+      </button>
+    </div>
+  </div>
+</section>

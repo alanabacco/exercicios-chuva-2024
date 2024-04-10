@@ -9,6 +9,8 @@ import { PresentationSectionComponent } from './components/presentation-section/
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component';
 import { ActionsSectionComponent } from './components/actions-section/actions-section.component';
 import { DetailsSectionComponent } from './components/details-section/details-section.component';
+import { DiscussionSectionComponent } from './components/discussion-section/discussion-section.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,11 @@ import { DetailsSectionComponent } from './components/details-section/details-se
     PresentationSectionComponent,
     ResumeSectionComponent,
     ActionsSectionComponent,
-    DetailsSectionComponent
+    DetailsSectionComponent,
+    DiscussionSectionComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
