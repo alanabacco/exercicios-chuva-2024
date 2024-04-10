@@ -29,7 +29,7 @@
         curiosidade? Deixe seus questionamentos ou sugestões para o autor!
       </p>
 
-      <button (click)="showForm()" class="create-topic-button">
+      <button (click)="showForm()" class="btn-create-topic">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path
@@ -52,7 +52,7 @@
             type="text"
             id="subject"
             name="subject"
-            class="discussion-form-input"
+            class="discussion-form-input subject"
             placeholder="Defina um tópico sucinto para notificar os autores..."
             ngModel
             required
@@ -86,6 +86,26 @@
     </div>
 
     <div class="break-line"></div>
+
+    <div class="new-topic-card" *ngIf="isNewTopicCardShowing">
+      <p class="new-topic-title">Assunto da pergunta aparece aqui</p>
+      <p class="new-topic-author">Carlos Henrique Santos</p>
+      <p class="new-topic-summary">
+        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo
+        da análise da dimensão e impacto de processo formativo situado impacto
+        de processo formativo processo...
+      </p>
+
+      <div class="waiting-feedback">
+        <img
+          width="30"
+          src="../../../assets/double-check.png"
+          alt="símbolo de duplo check"
+        />
+        <p>Aguardando feedback dos autores</p>
+        <a href="#">Editar tópico</a>
+      </div>
+    </div>
 
     <app-topic-card
       *ngFor="let topic of topicList"

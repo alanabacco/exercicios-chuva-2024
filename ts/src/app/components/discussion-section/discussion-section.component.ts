@@ -33,6 +33,7 @@ export class DiscussionSectionComponent implements OnInit {
   isFormShowing = false;
   isSubmitSucessShowing = false;
   isCreateTopicCallShowing = true;
+  isNewTopicCardShowing = false;
 
   showForm(): void {
     this.isFormShowing = true;
@@ -44,5 +45,6 @@ export class DiscussionSectionComponent implements OnInit {
     this.isSubmitSucessShowing = true;
     this.isCreateTopicCallShowing = false;
     this.isFormShowing = false;
+    this.isNewTopicCardShowing = true;
   }
 }
