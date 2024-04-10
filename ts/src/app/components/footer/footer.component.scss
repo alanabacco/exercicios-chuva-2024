@@ -1,10 +1,11 @@
 .footer {
-  margin-left: 220px;
+  margin: 0 36px 36px 256px;
+  padding-top: 36px;
+  border-top: 1px solid #ececec;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  padding: 0 36px 36px;
   font-family: "Quicksand", sans-serif;
 
   &-logo {
