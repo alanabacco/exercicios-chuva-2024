@@ -1,0 +1,34 @@
+.actions {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btns {
+    display: flex;
+    gap: 5px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #ed7839;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+  }
+  .cite-button {
+    color: #ed7839;
+    background-color: transparent;
+    border: none;
+  }
+}

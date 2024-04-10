@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PresentationSectionComponent } from './components/presentation-section/presentation-section.component';
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component';
+import { ActionsSectionComponent } from './components/actions-section/actions-section.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ResumeSectionComponent } from './components/resume-section/resume-secti
     HeaderComponent,
     FooterComponent,
     PresentationSectionComponent,
-    ResumeSectionComponent
+    ResumeSectionComponent,
+    ActionsSectionComponent
   ],
   imports: [
     BrowserModule
