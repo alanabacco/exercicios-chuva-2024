@@ -9,6 +9,25 @@ import { NgForm } from '@angular/forms';
 export class DiscussionSectionComponent implements OnInit {
   constructor() {}
 
+  topicList = [
+    {
+      title: 'Assunto da pergunta aparece aqui',
+      author: 'Carlos Henrique Santos',
+      summary:
+        'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...',
+      likes: 1,
+      answers: 1,
+    },
+    {
+      title: 'Assunto da pergunta aparece aqui',
+      author: 'Carlos Henrique Santos',
+      summary:
+        'Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...',
+      likes: 2,
+      answers: 2,
+    },
+  ];
+
   ngOnInit(): void {}
 
   isFormShowing = false;

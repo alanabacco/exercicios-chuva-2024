@@ -11,6 +11,7 @@ import { ActionsSectionComponent } from './components/actions-section/actions-se
 import { DetailsSectionComponent } from './components/details-section/details-section.component';
 import { DiscussionSectionComponent } from './components/discussion-section/discussion-section.component';
 import { FormsModule } from '@angular/forms';
+import { TopicCardComponent } from './components/discussion-section/topic-card/topic-card.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     ActionsSectionComponent,
     DetailsSectionComponent,
     DiscussionSectionComponent,
+    TopicCardComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
