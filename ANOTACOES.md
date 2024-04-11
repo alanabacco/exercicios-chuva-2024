@@ -11,3 +11,7 @@
 - Analisar o projeto no figma para entender o que deve ser feito
 - Baixar as fontes no google fonts
 - Desenvolver
+
+- Coloquei um .skip no teste de expandir o card de discussão pra não atrapalhar no github actions. Não deu tempo de fazer essa parte.
+
+- Fiquei feliz com o resultado, acredito que ficou bem fiel ao design do figma.
