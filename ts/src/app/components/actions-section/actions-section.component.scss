@@ -1,5 +1,4 @@
 .actions {
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -25,10 +24,17 @@
     color: #ffffff;
     font-weight: 500;
     border: none;
+    &:hover {
+      background-color: #ffb455;
+    }
   }
   .cite-button {
     color: #ed7839;
     background-color: transparent;
     border: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

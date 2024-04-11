@@ -2,3 +2,21 @@
   margin-left: 220px;
   padding: 40px;
 }
+
+.content-box {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.block2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.block3 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

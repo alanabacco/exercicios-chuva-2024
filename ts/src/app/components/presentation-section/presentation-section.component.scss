@@ -1,10 +1,10 @@
 .article-title {
-  display: inline;
   font-weight: 900;
   font-size: 20px;
   color: #ed7839;
+  line-height: 25px;
   letter-spacing: 0.05em;
-  height: fit-content;
+  margin-bottom: 30px;
 }
 
 .video {
@@ -15,12 +15,11 @@
 }
 
 .video-player {
-  margin-block: 30px;
   position: relative;
 }
 .color-overlay {
   position: absolute;
-  top: 30px;
+  top: 0;
   height: 439px;
   width: 784px;
   background: #8d350680;
@@ -33,7 +32,7 @@
   letter-spacing: 0.05em;
   position: absolute;
   padding: 32px;
-  top: 28px;
+  top: -2px;
 }
 .video-info {
   display: flex;
@@ -44,7 +43,7 @@
   letter-spacing: 0.05em;
   position: absolute;
   padding: 32px;
-  bottom: 0;
+  bottom: 21px;
 }
 .video-picture {
   border-radius: 50%;

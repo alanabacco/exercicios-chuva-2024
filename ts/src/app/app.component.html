@@ -2,11 +2,19 @@
 <app-header></app-header>
 
 <main class="main-content">
-  <app-presentation-section></app-presentation-section>
-  <app-resume-section></app-resume-section>
-  <app-actions-section></app-actions-section>
-  <app-details-section></app-details-section>
-  <app-discussion-section></app-discussion-section>
+  <div class="content-box">
+    <div class="block1">
+      <app-presentation-section></app-presentation-section>
+    </div>
+    <div class="block2">
+      <app-actions-section></app-actions-section>
+      <app-details-section></app-details-section>
+    </div>
+  </div>
+  <div class="block3">
+    <app-resume-section></app-resume-section>
+    <app-discussion-section></app-discussion-section>
+  </div>
 </main>
 
 <app-footer></app-footer>
